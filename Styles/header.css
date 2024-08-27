@@ -8,6 +8,10 @@ header
 
     background-color: black;
     height: 70px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(72, 76, 80, 0.799);
 }
 
 .header-left
@@ -75,7 +79,129 @@ header
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 11px;
+
+    margin-right: 10px;
+}
+
+.hr-search-icon
+{
+    height: 18px;
+    margin-right: -23px;
+    z-index: 1;
+
+}
+.hr-searchBar
+{
+    width: 350px;
+    height: 28px;
+
+    background-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(63, 64, 69);
+
+    cursor: pointer;
+}
+.hr-searchBar::placeholder
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(223, 223, 223);
+}
+.line
+{
+    height: 20px;
+    border-style: solid;
+    color: rgb(63, 64, 69);
+  
+}
+
+.hr-create-btn , .hr-issues-btn , .hr-pr-btn , .hr-not-btn
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    column-gap: 15px;
+
+    height: 32px;
+
+    background-color: black;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(63, 64, 69);
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: all 0.1s;
+    
+}
+.hr-create-btn:hover , .hr-issues-btn:hover , .hr-pr-btn:hover , .hr-not-btn:hover
+{
+    background-color: rgb(32, 32, 44); 
+}
+.hr-create-btn-plus
+{
+    height: 17px;
+    margin-left: 5px;
+}
+.hr-create-btn-down 
+{
+    height: 6px;
+    margin-right: 5px;
+}
+.hr-create-btn-preview,
+.hr-issues-btn-preview,
+.hr-pr-btn-preview,
+.hr-not-btn-preview
+{
+    color:white;
+    position: absolute;
+    background-color: rgb(87, 98, 109);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    border-style: none;
+    border-radius: 8px;
+    
+    transition: all 0.1s;
+
+    padding: 8px 5px;
+
+    left: -14px;
+    top: 40px;
+
+}
+.hr-issues-btn-preview{left: -8px;}
+.hr-pr-btn-preview    {left: -26px;}
+.hr-not-btn-preview   {left: -160px;}
+
+.hr-create-btn:hover .hr-create-btn-preview,
+.hr-issues-btn:hover .hr-issues-btn-preview,
+.hr-pr-btn:hover     .hr-pr-btn-preview,
+.hr-not-btn:hover    .hr-not-btn-preview
+{
+    opacity: 1;
+}
+
+.hr-issues-btn img
+{
+    height: 22px;
+}
+.hr-pr-btn img
+{
+    height: 20px;
+}
+.hr-not-btn img
+{
+    height: 20px;
 }
 
 
@@ -87,3 +213,4 @@ header
     height: 35px;
     border-radius: 30px;
 }
+

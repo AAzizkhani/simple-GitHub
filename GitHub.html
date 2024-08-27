@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="Styles/header.css">
     </head>
 
-    <body style="margin: 0px;">
+    <body style="margin: 0px; background-color: black;">
         <header>
             <div class="header-left">
                 <button class="hl-menu-btn"><img class="menu-icon" src="Pics/Header/menu-icon.png"></button>
@@ -18,12 +18,33 @@
             </div>
 
             <div class="header-right" >
-                <input  class="hr-searchBar" type="text" placeholder="Type / to search">
+                <div style="display: flex; flex-direction: row; align-items: center; justify-items: center;">
+                    <img class="hr-search-icon" src="Pics/Header/search-icon.png">
+                    <input  class="hr-searchBar" type="text" placeholder="       Type / to search">
+                </div>
 
-                <button class="hr-create-btn"><img src="Pics/Header/plus-icon.png"><img src="Pics/Header/down-icon.png"></button>
-                <button class="hr-issues-btn"><img src="Pics/Header/circle-icon.png"></button>
-                <button class="hr-pr-btn"    ><img src="Pics/Header/pointers-icon.png"></button>
-                <button class="hr-not-btn"   ><img src="Pics/Header/box-icon.png"></button>
+                <hr class="line">
+
+                <button  class="hr-create-btn">
+                    <img class="hr-create-btn-plus" src="Pics/Header/plus-icon.png">
+                    <img class="hr-create-btn-down" src="Pics/Header/down-icon.png">
+                    <div class="hr-create-btn-preview">Create new...</div>
+                </button>
+
+                <button class="hr-issues-btn">
+                    <img src="Pics/Header/circle-icon.png">
+                    <div class="hr-issues-btn-preview">Issues</div>
+                </button>
+
+                <button class="hr-pr-btn"    >
+                    <img src="Pics/Header/pointers-icon.png">
+                    <div class="hr-pr-btn-preview">Pull requests</div>
+                </button>
+
+                <button class="hr-not-btn"   >
+                    <img src="Pics/Header/box-icon.png">
+                    <div class="hr-not-btn-preview">You have 32 unread notifications</div>
+                </button>
 
                 <img class="hr-profPic" src="Pics/Header/Prof.png">
             </div>
