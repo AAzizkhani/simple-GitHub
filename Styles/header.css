@@ -1,0 +1,89 @@
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+    background-color: black;
+    height: 70px;
+}
+
+.header-left
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+
+    margin-left: 10px;
+}
+.hl-menu-btn
+{
+    height: 31px;
+    width: 31px;
+    background-color: currentColor;
+
+    border-style: solid;
+    border-color: rgb(63, 64, 69);
+    border-width: 1px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+.menu-icon
+{
+    margin-top: 2px;
+    height: 14px;
+}
+.hl-GH-icon
+{
+    height: 35px;
+    border-radius: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+
+
+}
+.hl-dash-btn
+{
+    height: 30px;
+    font-size: 13.5px;
+    padding: 0px 8px;
+    background-color: black;
+    color: white;
+
+    border-style: none;
+    border-radius: 8px;
+
+    transition: all 0.1s;
+
+    cursor: pointer;
+
+}
+.hl-dash-btn:hover
+{
+    background-color: rgb(32, 32, 44);
+}
+
+.header-right
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+
+
+
+
+.hr-profPic
+{
+    height: 35px;
+    border-radius: 30px;
+}
