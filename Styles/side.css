@@ -138,12 +138,18 @@
 {
     text-decoration: underline;
 }
+.det_name:hover .rep_per
+{
+    opacity: 1;
+}
 
 .rep_per
 {
     cursor:default;
 
     position: absolute;
+    bottom: 31px;
+    left: 25px;
 
     background-color: rgb(26, 29, 38);
 
@@ -158,8 +164,15 @@
     row-gap: 15px;
     
     white-space: nowrap;
+    pointer-events: none;
 
     width: 350px;
+
+    padding-bottom: 10px;
+
+    opacity: 0;
+
+    transition: opacity 0.5s;
 }
 .per_det
 {
@@ -168,9 +181,72 @@
     align-items: center;
     justify-content: start;
     column-gap: 5px;
+
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.per_det img{
+    border-radius: 0px;
+}
+.det_rep_name
+{
+    padding-left: 5px;
+}
+.det_stat
+{
+    color: rgb(180, 188, 192);
+    font-size: 11px;
+    border-color:rgba(179, 195, 203, 0.43);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 2px 5px;
+}
+.rep_bio
+{
+    margin-left: 15px;
+    color: rgb(180, 188, 192);
+    font-size: 12px;
+
+}
+.rep_method
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 11.5px;
+    color: rgb(180, 188, 192);
+    
+    margin-left: 15px;
+
 }
 
-.per_det img
+.shape_cr,.shape_cr_1 ,.shape_cr_2 , .shape_cr_3
 {
-    color: rgb(0, 0, 0);
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 10px;
+
+    background-color: rgb(89, 46, 129);
+    margin-bottom: 2px;
+}
+.shape_cr_1{background-color: rgb(151, 42, 98);}
+.shape_cr_2{background-color: rgb(200, 86, 33);}
+.shape_cr_3{background-color: rgb(243, 223, 36);}
+
+.lang
+{
+    padding-left: 3px;
+    padding-right: 15px;
+}
+.shap_star
+{
+    padding-right: 2px;
+}
+.shap_star img
+{
+    height: 14px;
 }
